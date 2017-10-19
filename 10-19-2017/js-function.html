@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Functions</title>
+    <script type="text/javascript">
+        let my_name ='Kevin Gicheha' ;
+        console.log('My name is ' + my_name.toUpperCase());
+        console.log('My name has ' + my_name.length + ' characters');
+    </script>
+  </head>
+  <body>
+    <h1>This is the JS Function exericise, see console for outputs</h1>
+    <script type="text/javascript">
+      function get_product (a, b) {
+        return a*b;
+      }
+      console.log(get_product(3, 8));
+      console.log(get_product(239, 859));
+
+      const  arrow_get_product = (c, d) => {
+        return c*d ;
+      }
+      console.log(arrow_get_product(6, 8));
+
+      //meets single paramenter requirement, so you can further condese it
+      const  arrow_get_square = (c) => c*c ;
+      console.log(arrow_get_square(8));
+
+      //grade calculator
+      const get_letter_grade = (grade) => {
+        let letter_grade ;
+        if (grade >= 90){
+          letter_grade = "A";
+        }
+        else if (grade >= 80) {
+          letter_grade = "B";
+        }
+        else if (grade >= 70){
+          letter_grade = "C";
+        }
+        else if (grade >= 60) {
+          letter_grade = "D";
+        }
+        else {
+          letter_grade = "F";
+        } ;
+        return letter_grade;
+      }
+      console.log(get_letter_grade (85));
+
+
+
+    </script>
+  </body>
+</html>
