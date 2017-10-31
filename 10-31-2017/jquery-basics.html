@@ -3,24 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>JQuery Exercise</title>
-
   </head>
   <body>
 <a href="http://www.facebook.com">website1</a>
 <a id= "google" href="http://www.google.com">website 2</a>
 <a class= "my-link" href="http://www.google.com">website 3</a>
 <a class= "my-link" href="http://www.google.com">website 4</a>
-<script type="text/javascript">
-  document.getElementById('google').innerHTML = "Google" ;
-  let links = document.getElementsByClassName('my-link') ;
-  links[0].innerHTML = "Twitter";
-  links[0].href = "http://www.twitter.com" ;
-  links[1].innerHTML = "TBD";
-  links[1].href = "#" ;
 
-
+<div id="main-text">
+  <h1>HMTL and CSS</h1>
+  <button class = "my-buttons" type="button">Recent Projects</button>
+  <ul class = "projects">
+    <li>HTML for Newark</li>
+    <li>CSS for MISY350</li>
+  </ul>
+  <h1>JavaScript</h1>
+  <button class = "my-buttons" type="button">Recent Projects</button>
+  <ul class = "projects">
+    <li>JavaScript for Newark</li>
+    <li>JQuery for MISY350</li>
+  </ul>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous">
 </script>
-    <h1>DOM is cool</h1>
-    <h1></h1>
+<script src="jquery-basics.js"></script>
+
   </body>
 </html>
